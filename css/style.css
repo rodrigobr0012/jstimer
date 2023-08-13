@@ -1,0 +1,34 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(purple,blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#relogio{
+    display: flex;
+    gap: 30px;
+}
+/* codigo responsavel pela criação do bolao */
+#relogio div{
+    padding: 60px;
+    border-radius: 80px;
+    background: white
+
+} 
+/* foi usado dessa forma para se comunicar com todas as 3 divs */
+#relogio span{ 
+    font-size: 100px;
+    font-family: DSDIGIT;
+    color: black;
+}
+/* código responsavel pela virtualização da fonte */
+@font-face {
+    font-family: DSDIGIT;
+    src: url('DS-DIGI.TTF');
+}
